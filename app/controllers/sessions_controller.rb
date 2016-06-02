@@ -18,8 +18,8 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    current_user.session_token = nil
-    session[:session_token] = nil
-    redirect_to new_user_url
+    @user = User.find_by_session_token(session[:session_token])
+    @user.reset_session_token!
+    redirect_to new_session_url
   end
 end

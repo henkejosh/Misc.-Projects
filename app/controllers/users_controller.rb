@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :require_login, only: :show
 
   def new
     @user = User.new
@@ -14,6 +15,11 @@ class UsersController < ApplicationController
       flash.now[:errors] = @user.errors.full_messages
       render :new
     end
+  end
+
+  def show
+    @user = User.find(params[:id])
+    render :show
   end
 
   private

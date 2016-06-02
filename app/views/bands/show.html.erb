@@ -1,0 +1,8 @@
+<% band = Band.find(params[:id]) %>
+<h1><%= band.name %></h1>
+
+<% band.albums.each do |album| %>
+<ul>
+  <li><%= album.name %></li>
+</ul>
+<% end %>
