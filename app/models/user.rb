@@ -11,26 +11,32 @@ class User < ActiveRecord::Base
   end
 
   def reset_session_token!
-    session_token = User.generate_session_token
+    self.session_token = User.generate_session_token
     self.save!
-    session_token
+    self.session_token
   end
 
   def ensure_session_token
-    session_token ||= reset_session_token!
+    self.session_token ||= User.generate_session_token
   end
 
   def password=(pw)
     @password = pw
-    password_digest = BCrypt::Password.create(pw)
+    self.password_digest = BCrypt::Password.create(pw)
   end
 
   def is_password?(pw)
-    BCrypt::Password.new(password_digest).is_password?(pw)
+    BCrypt::Password.new(self.password_digest).is_password?(pw)
   end
 
   def self.find_by_credentials(email, pw)
-    User.find(email: email, password_digest: BCrypt::Password.create(pw))
+    @user = User.find_by(email: email)
+    return nil unless @user
+    @user.is_password?(pw) ? @user : nil
+  end
+
+  def self.find_by_session_token(session_token)
+    User.find_by(session_token: session_token)
   end
 
 end
