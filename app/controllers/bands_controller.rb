@@ -1,6 +1,6 @@
 class BandsController < ApplicationController
   before_action :require_login
-  
+
   def new
     @band = Band.new
     render :new

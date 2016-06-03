@@ -8,3 +8,8 @@
 
 <h3>Lyrics:</h3>
 <p><%= @track.lyrics %>
+
+<h3>Notes:</h3>
+<% if @track.notes %>
+<%= render "notes/form" %>
+<% end %>

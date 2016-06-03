@@ -8,6 +8,6 @@ Back to band: <a href="<%= bands_url(@album.band_id) %>"><%= @album.band.name %>
 Tracks:
 <ul>
   <% @album.tracks.each do |track| %>
-  <li><a href="<%= tracks_url(track.id) %>"><%= track.name %></a></li>
+  <li><a href="bands/<%= track.album.band_id %>/albums/<%= track.album_id %>/tracks/<%= track.id %>"><%= track.name %></a></li>
   <% end %>
 </ul>

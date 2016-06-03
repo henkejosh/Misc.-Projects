@@ -1,0 +1,15 @@
+<h2><%= @note.track.name %></h2>
+<h3>Leave a Note</h3>
+<%=  %>
+
+<form action="notes_url" method="post">
+  <input type="hidden"
+        name="authenticity_token"
+        value="<%= form_authenticity_token %>">
+
+  <label name="note_body">Note:</label>
+  <input type="textarea" name="note[body]"
+          value="<%= @note.body %>">
+
+  <input type="submit">
+</form>

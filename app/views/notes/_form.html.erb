@@ -1,0 +1,7 @@
+<% notes = Note.find_by(track_id: @track.id) %>
+<% if notes %>
+  <% notes.each do |note| %>
+<div><%= note.user.email %></div>
+<p><%= note.body %></p>
+  <% end %>
+<% end %>
