@@ -1,0 +1,54 @@
+.hanoi {
+  margin: 30px auto;
+  width: 600px;
+}
+
+ul {
+  float: left;
+  border: 1px;
+  margin: 10px;
+  width: 180px;
+  padding: 0 0 10px 0;
+  border-bottom: 10px solid black;
+  cursor: pointer;
+  top: 100px;
+  list-style: none;
+}
+
+ul:hover {
+  border-bottom: 10px solid green;
+}
+
+li {
+  vertical-align: middle;
+  display: block;
+  height: 50px;
+  width: 0px;
+  background-color: blue;
+  border-radius: 1px;
+  margin: 10px auto;
+}
+
+.disk0 {
+  width: 60px;
+
+  /*background-color: blue;*/
+}
+
+.disk1 {
+  width: 100px;
+}
+
+.disk2 {
+  width: 140px;
+}
+
+ul li:first-child {
+
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
