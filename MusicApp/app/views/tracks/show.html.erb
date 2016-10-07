@@ -1,0 +1,15 @@
+
+<h1><%= @track.name %></h1>
+
+<ul>
+  <li><strong>Album: </strong><%= @track.album.name %></li>
+  <li><strong>Track Type: </strong><%= @track.track_type %></li>
+</ul>
+
+<h3>Lyrics:</h3>
+<p><%= @track.lyrics %>
+
+<h3>Notes:</h3>
+<% if @track.notes %>
+<%= render "notes/form" %>
+<% end %>

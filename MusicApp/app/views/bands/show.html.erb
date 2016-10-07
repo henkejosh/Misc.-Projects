@@ -1,0 +1,8 @@
+<% band = Band.find(params[:id]) %>
+<h1><%= band.name %></h1>
+
+<% band.albums.each do |album| %>
+<ul>
+  <li><a href="/bands/<%= album.band.id %>/albums/<%= album.id %>"><%= album.name %></a></li>
+</ul>
+<% end %>
