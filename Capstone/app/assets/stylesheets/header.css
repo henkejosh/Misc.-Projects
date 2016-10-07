@@ -1,0 +1,260 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav.header {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  /*background: #333333;*/
+  background: #111111;
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+  /*justify-content: space-between;*/
+  border-bottom: 1px solid #5B8DAF;
+  /*border: 1px solid #111111;*/
+}
+
+ul.left-nav {
+  padding-left: 5%;
+  flex-basis: 275px;
+  justify-content: center;
+  margin: 0px;
+  width: 35%;
+  list-style: none;
+  display: flex;
+  /*border: 2px solid aqua;*/
+}
+
+div.search {
+  /*border: 2px solid purple;*/
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+ul.right-nav {
+  display: flex;
+  width: 25%;
+  /*border: 1px solid orange;*/
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  right: 0%;
+  height: 41px;
+}
+
+.search input {
+  border-radius: 8px;
+  width: 80%;
+  height: 25px;
+  margin: 6px 0px 5px 10px;
+  color: #CBCBCB;
+  font: 100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+}
+
+ul.auth-links {
+  position: absolute;
+  /*background: blue;*/
+  top: 40px;
+}
+
+ul.auth-links li:hover {
+  background-color: #333333;
+  /*background-color: #111111;*/
+  cursor: pointer;
+}
+
+ul.auth-links li {
+  background-color: #111111;
+  color: #CBCBCB;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border: 1px solid #111111;
+  border-top: 0px;
+  cursor: pointer;
+  font: 100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+}
+
+li.auth-button {
+  /*height: 40px;
+  width: 40px;*/
+  cursor: pointer;
+  /*max-height: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  min-width: 40px;*/
+}
+
+li.auth-button > img {
+  max-height: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  min-width: 40px;
+}
+
+.left-nav li {
+  width: 85px;
+  color: #CBCBCB;
+  font: 100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  text-decoration: none;
+  /*border: 1px solid blue;*/
+  border: 1px solid #111111;
+  border-left: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  text-align: center;
+}
+
+.left-nav li:hover {
+  /*background-color: #111111;*/
+  background-color: #333333;
+  cursor: pointer;
+}
+
+.left-nav a {
+  color: #CBCBCB;
+  font: 100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  text-decoration: none;
+  vertical-align: middle;
+  display: block;
+  line-height: 45px;
+}
+.right-nav p.welcome {
+  font: 100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  color: #CBCBCB;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  line-height: 45px;
+}
+
+.right-nav li {
+  width: 85px;
+  color: #CBCBCB;
+  font: 100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  text-decoration: none;
+  /*border: 1px solid red;*/
+  height: 100%;
+  /*border: 1px solid #111111;*/
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  text-align: center;
+  line-height: 45px;
+}
+
+.right-nav li:hover {
+  /*background-color: #111111;*/
+  background-color: #333333;
+  cursor: pointer;
+}
+
+li.logo {
+  background: #111111;;
+  text-align: center;
+  /*border-left: 1px solid #111111;*/
+}
+
+li.logo:hover {
+  background: #111111;
+  cursor: auto;
+}
+
+li.logo img {
+  max-width: 40px;
+  max-height: 40px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+div.ReactModal__Content h2 {
+  font: 100 25px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  text-align: center;
+}
+
+div.ReactModal__Content label {
+  font: 100 20px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+}
+
+.login-errors {
+  color: red;
+  font: 100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+}
+
+.signup-errors {
+  color: red;
+  font: 100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+}
+
+div.submit-button {
+  text-align: center;
+}
+
+form.login div.login-email {
+  text-align: center;
+}
+
+form.login div.login-password {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form.signup div.signup-email {
+  text-align: center;
+}
+
+form.signup div.signup-password {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label[name="email"] {
+  margin-right: 43px;
+}
+
+label[name="password"] {
+  margin-right: 3px;
+}
+
+input[type="submit"] {
+  /*background: #333333;*/
+  width: 150px;
+  height: 25px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  font: 100 10px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  cursor: pointer;
+  background: #CBCBCB;
+}
+
+div.cancel-button {
+  text-align: center;
+}
+
+button[type="cancel"] {
+  cursor: pointer;
+  width: 150px;
+  height: 25px;
+  border-radius: 8px;
+  font: 100 10px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  background: #CBCBCB;
+}
+
+div.login-errors {
+  text-align: center;
+}
+
+div.signup-errors {
+  text-align: center;
+}

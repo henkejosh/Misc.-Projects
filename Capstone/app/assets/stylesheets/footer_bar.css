@@ -1,0 +1,227 @@
+section.audio-comments-bar {
+  display: flex;
+  flex-direction: row;
+  bottom: 0px;
+  left: 0;
+  background: #111111;
+  /*border: 2px solid green;*/
+  position: fixed;
+  width: 100%;
+  height: auto;
+}
+
+div.comment-bar-padding {
+  padding: 0px 5%;
+}
+
+div.comment-bar {
+  display: flex;
+  flex-direction: row;
+  /*border: 2px solid yellow;*/
+  background: #111111;
+  width: 100%;
+  bottom: 50px;
+  position: fixed;
+  height: 30px;
+  border-bottom: 1px solid #333333;
+  padding: 0px 5%;
+}
+
+div.existing-comments {
+  display: flex;
+  flex-direction: row;
+}
+
+div.new-comment-bar {
+  display: flex;
+  flex-direction: row;
+  width: 65%;
+}
+
+div.current-comment {
+  /*border: 2px solid orange;*/
+  /*height: 50px;*/
+  bottom: 75px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  left: 50%;
+}
+
+p.current-comment {
+  /*border: 2px solid orange;*/
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  left: 50%;
+  /*bottom: 75px;*/
+  bottom: 30px;
+  color: white;
+  /*background: green;*/
+  z-index: 10;
+  /*font: 100 14px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;*/
+  font: 100 10px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+}
+
+div.current-comment img {
+  height: 50px;
+}
+
+section.comForm {
+  display: flex;
+  flex-direction: column;
+  /*border: 2px solid purple;*/
+  width: 35%;
+  align-items: center;
+}
+
+/*form.comForm {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid purple;
+  width: 35%;
+  align-items: center;
+}
+
+form.comForm input[type="textarea"]{
+  width: 25%;
+  position: fixed;
+  bottom: 75px;
+}
+*/
+
+div.AudioPlayer > img.play {
+  height: 35px;
+  padding: 0px 20px;
+}
+
+div.AudioPlayer > img.play:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+div.AudioPlayer > img.comment-icon {
+  height: 30px;
+  padding: 0px 20px;
+}
+div.AudioPlayer > img.comment-icon:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+div.comments-index {
+  display: flex;
+  flex-direction: row;
+  /*border: 2px solid red;*/
+  position: fixed;
+  bottom: 50px;
+  width: 60%;
+  align-items: baseline;
+  overflow: auto;
+}
+
+ul.ComIndexItem {
+  display: flex;
+  flex-direction: row;
+}
+
+/*ul.ComIndexItem li {
+  position: absolute;
+}*/
+
+ul.ComIndexItem > img {
+  height: 30px;
+  top: auto;
+}
+
+ul.ComIndexItem > img.current {
+  height: 40px;
+}
+
+ul.ComIndexItem  > img.normal {
+  height: 30px;
+}
+
+ul.ComIndexItem  > img.passed {
+  opacity: 0.5;
+  height: 30px;
+}
+
+/*section.comForm span[type="submit"] {
+  color: #CBCBCB;
+  font: 100 10px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  width: 30%;
+  height: 20px;
+}*/
+
+
+section.comForm > textarea {
+  border: 4px solid #111111;
+  height: 25px;
+  border-radius: 5px;
+  width: 25%;
+  position: fixed;
+  bottom: 75px;
+  display: none;
+}
+
+section.comForm span {
+  color: #CBCBCB;
+  font: 100 10px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  width: 30%;
+  height: 20px;
+  border-color: none;
+  border-style: none;
+  border: none;
+  background-color: #111111;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+section.comForm span:hover {
+  border-width: 2px;
+  background-color: #333333;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+
+/*FORM!!! */
+/*form.comForm input[type="textarea"] {
+  border: 4px solid #111111;
+  width: 300px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+form.comForm input[type="submit"] {
+  color: #CBCBCB;
+  font: 100 10px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  width: 30%;
+  height: 20px;
+  border-color: none;
+  border-style: none;
+  border: none;
+  background-color: #111111;
+}
+
+form.comForm input[type="submit"]:hover {
+  border-width: 2px;
+  background-color: #333333;
+  border-radius: 8px;
+}*/
+
+ul.artist-title-album {
+  display: flex;
+  flex-direction: column;
+}
+
+ul.artist-title-album > li {
+  font: 100 10px/1.5 "Interstate","Lucida Grande",Arial,sans-serif;
+  color: #CBCBCB;
+}
+
+ul.artist-title-album > li.album-title {
+}
